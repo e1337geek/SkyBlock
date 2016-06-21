@@ -37,7 +37,7 @@ public class Island {
 	public Island(Player owner, Location loc, boolean gen) {
 		ownerName = owner.getName();
 		this.loc = loc;
-		spawn = loc.clone().add(1.5, 3, 5.5);
+		spawn = loc.clone();
 		spawn.setYaw(-180);
 		if (gen) {
 			gen();
